@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rotating-image {
+    width: 150px; /* Resmin boyutu */
+    height: 150px;
+    border-radius: 50%; /* İsteğe bağlı olarak yuvarlak hale getirir */
+    animation: rotateImage 5s linear infinite; /* Animasyon tanımı */
+}
+
+@keyframes rotateImage {
+    from {
+        transform: rotate(0deg); /* Başlangıçta resim 0 derece */
+    }
+    to {
+        transform: rotate(360deg); /* Sonunda resim 360 derece döner */
+    }
+}
