@@ -27,7 +27,7 @@
     width: 150px; /* Resmin boyutu */
     height: 150px;
     border-radius: 50%; /* İsteğe bağlı olarak yuvarlak hale getirir */
-    animation: rotateImage 5s linear infinite; /* Animasyon tanımı */
+    animation: rotateImage 18s linear infinite; /* Animasyon tanımı */
 }
 
 @keyframes rotateImage {
@@ -38,16 +38,30 @@
         transform: rotate(360deg); /* Sonunda resim 360 derece döner */
     }
 }
+button {
+  background-color: #141212; /* Butonun başlangıç arka plan rengi */
+  color: white; /* Butonun yazı rengi */
+  padding: 10px 20px; /* Butonun iç boşlukları */
+  border: none; /* Kenarlık yok */
+  cursor: pointer; /* Fare imlecini değiştir */
+  border-radius: 5px; /* Yuvarlatılmış köşeler */
+  transition: background-color 0.3s ease; /* Renk değişiminin yumuşak olması için geçiş ekledik */
+}
+
+button:hover {
+  background-color: #8a8188; /* Hover durumunda arka plan renginin değişmesi */
+}
   </style>
   
   </head>
   <body class="gradient-bg">
     <nav class="navbar navbar-expand-lg text-white bg-dark">
-        <h2 >Kitapsec</h2>
+      <button><a href="index.html"><h2 >Kitapsec</h2></a></button>
         <div class="ml-auto ">        
-            <a class="col-sm-4" href="yeniproje.html">Anasayfa</a>
-            <a class="col-sm-4" href="urunler.html">Ürünler</a>
-            <a class="col-sm-4" href="hakkimizda.html">Hakkımızda</a>
+          <a class="col-sm-3" href="index.html">Anasayfa</a>
+          <a class="col-sm-3" href="urunler.html">Ürünler</a>
+          <a class="col-sm-3" href="hakkimizda.html">Hakkımızda</a>
+        
         </div>
     </nav>
 
